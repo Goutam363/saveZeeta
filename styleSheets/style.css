@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+.score{
+    position: fixed;
+    margin: 1rem;
+    color: white;
+    user-select: none;
+    font-size: 2rem;
+}
+.gameOver{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameOver h1{
+    font-size: 3rem;
+    line-height: 0%;
+    user-select: none;
+}
+.gameOver p{
+    font-size: 1rem;
+    user-select: none;
+    color: gray;
+}
+.gameOver>div{
+    background-color: white;
+    text-align: center;
+    width: 20rem;
+    border-radius: 20px;
+}
+button{
+    color: white;
+    border-radius: 30px;
+    background-color: steelblue;
+    width: 80%;
+    margin: 5px;
+    padding: 3px;
+    font-size: 2rem;
+    border: none;
+}
+#preLoader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #191f26 url('https://acegif.com/wp-content/uploads/loading-2.gif') no-repeat center;
+    z-index: 99999;
+}
+#lightBox{
+    height: 0;
+    width: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 1.5s ease-in-out;
+    opacity: 0.8;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+    z-index: 9999;
+    user-select: none;
+}
